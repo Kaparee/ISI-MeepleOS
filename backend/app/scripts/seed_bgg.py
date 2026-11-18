@@ -393,7 +393,7 @@ async def seed_database(games_data: list[dict]):
         print(f"[SUKCES] Zapisano do bazy {nowe_gry_count} nowych gier!")
 
 if __name__ == "__main__":
-    sciezka_csv = Path(__file__).resolve().parents[3] / "Kaggle" / "archive" / "game.csv"
+    sciezka_csv = Path(__file__).resolve().parents[3] / "dane_kaggle" / "game.csv"
     top_ids = get_top_bgg_ids(sciezka_csv, limit=1000)
     rozmiar_paczki = 20
     gry = pobierz_gry(top_ids, rozmiar_paczki)

@@ -2,15 +2,7 @@
 # GŁÓWNY .GITIGNORE DLA PROJEKTU ISI
 # ==========================================
 
-# 1. Gigantyczne zbiory danych i archiwa (BLOKADA LIMITU GITHUB 100MB)
-*.csv
-*.zip
-archive/
-Kaggle/
-test_BGG/plays/
-test_BGG/games/
-
-# 2. Środowiska wirtualne Pythona
+# 1. Środowiska wirtualne Pythona
 .venv/
 */.venv/
 venv/
@@ -21,7 +13,7 @@ __pycache__/
 */__pycache__/
 *.cpython-*
 
-# 3. Frontend (Node.js / Vite / React)
+# 2. Frontend (Node.js / Vite / React)
 node_modules/
 */node_modules/
 dist/
@@ -30,7 +22,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# 4. Pliki konfiguracyjne środowisk i sekrety (.env)
+# 3. Pliki konfiguracyjne środowisk i sekrety (.env)
 .env
 */.env
 *.env.local
@@ -38,7 +30,7 @@ yarn-error.log*
 !.env.example
 !*/.env.example
 
-# 5. IDE i edytory kodu
+# 4. IDE i edytory kodu
 .idea/
 */.idea/
 .vscode/
@@ -49,25 +41,23 @@ yarn-error.log*
 .DS_Store
 Thumbs.db
 
-# 6. Baza danych i logi
+# 5. Baza danych i logi
 *.sqlite
 *.sqlite3
 postgres_data/
 *.log
 
-# 7. Wyniki modeli ML i tymczasowe wagi
+# 6. Wyniki modeli ML i tymczasowe wagi
 *.joblib
 !recommender_pipeline.joblib
 
-# 8. Dokumentacja, notatki, prototypy i specyfikacje (wykluczone z Gita)
-Dokumentacja/
-MeepleOS/
-Kaggle/
-test_BGG/
+# 7. Duże pliki i archiwa danych
+*.csv
+*.zip
+
+# 8. Folder z całą dokumentacją, specyfikacjami i danymi analitycznymi
+Folder informacyjny/
+[Ff]older [Ii]nformacyjny/
+dane_kaggle/
 README.md
-PLAN_DZIALANIA_ISI.md
-notatki.md
-przewodnik_modele_game.md
-temat_projektu_ISI.txt
-134960.txt
-*.pdf
+
